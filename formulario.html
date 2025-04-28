@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - BlogTech</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>BlogTech</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="formulario.html">Cadastro</a></li>
+        <li><a href="artigos.html">Artigos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    <form id="cadastroForm">
+      <h2>Formulário de Cadastro</h2>
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label>Nome: <input type="text" name="nome" required></label>
+        <label>Email: <input type="email" name="email" required></label>
+        <label>CPF: <input type="text" name="cpf" required></label>
+        <label>Idade: <input type="number" name="idade" required></label>
+        <label>Telefone: <input type="tel" name="telefone" required></label>
+        <label>Data de Nascimento: <input type="date" name="nascimento"></label>
+        <label>Sexo:
+          <select name="sexo">
+            <option value="">Selecione</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+            <option value="Outro">Outro</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Endereço</legend>
+        <label>CEP: <input type="text" name="cep" required></label>
+        <label>Tipo de Logradouro: <input type="text" name="tipoLogradouro" required></label>
+        <label>Logradouro: <input type="text" name="logradouro" required></label>
+        <label>Bairro: <input type="text" name="bairro" required></label>
+        <label>Cidade: <input type="text" name="cidade" required></label>
+        <label>Estado: <input type="text" name="estado" required></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Informações Adicionais</legend>
+        <label><input type="checkbox" name="interesses" value="IA"> Inteligência Artificial</label>
+        <label><input type="checkbox" name="interesses" value="Redes"> Redes</label>
+        <label><input type="checkbox" name="interesses" value="Desenvolvimento"> Desenvolvimento</label>
+        <label>Observações: <textarea name="observacoes"></textarea></label>
+        <label>Upload de Arquivo: <input type="file" name="arquivo"></label>
+      </fieldset>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 BlogTech | Siga-nos nas redes sociais: @blogtech</p>
+  </footer>
+</body>
+</html>
